@@ -27,13 +27,13 @@ class pushmessage{
 	 * 	$params["msg"] : Expected Message For GCM 
      */  
     private function sendMessageAndroid($registration_id, $params) { 
-        $this->androidAuthKey = "Android Auth Key Here";//Auth Key Herer 
+        $this->androidAuthKey = $androidAuthKey;//Auth Key Herer 
          
         ## data is different from what your app is programmed 
         $data = array( 
                 'registration_ids' => array($registration_id), 
                 'data' => array( 
-                                'gcm_msg'		=> $params["msg"]
+                                'gcm_msg'		=> $params["mst"]
 							) 
                 ); 
          
@@ -124,7 +124,7 @@ class pushmessage{
 		            $this->sendMessageIos($params["registration_id"], $params); 
 		            break; 
 		        case "android": 
-		            $this->sendMessageAndroid($params["registration_id"], $params); 
+		            $this->sendMessageAndroid($params["idphone"], $params); 
 		            break; 
 	   		}
 		}
