@@ -27,6 +27,8 @@ class pushmessage{
 	 * 	$params["msg"] : Expected Message For GCM 
      */  
     private function sendMessageAndroid($registration_id, $params) { 
+    	
+    	return " test la";
         $this->androidAuthKey = $androidAuthKey;//Auth Key Herer 
          
         ## data is different from what your app is programmed 
