@@ -6,3 +6,5 @@ $params	= array("pushtype"=>"android", $idphone=>"APA91bFfYp6PtljKfiFJkQnZ0oHIO6
 $rtn = $push->sendMessage($params);
 echo "apa ni?".$rtn;
 //print_r($rtn);
+
+?>
