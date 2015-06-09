@@ -19,7 +19,7 @@ class pushmessage{
      
 	 
 	 
-	public $androidAuthKey		= "Android Auth Key Here"; 
+	public $androidAuthKey		= "AIzaSyB2oqFFqQUY-wtHC6qMIP2oBazX9TDmbI0"; 
 	public $iosApnsCert			= "./certification/xxxxx.pem"; 
 	
 	 /** 
